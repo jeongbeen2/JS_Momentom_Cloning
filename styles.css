@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body {
+  color: white;
+  animation: fadeIn 0.5s ease-in-out;
+  font-family: 'Indie Flower', cursive;
+}
+
+.form,
+.greetings,
+.toDoInput{
+  display: none;
+}
+.greetings {
+  font-size: 50px;
+  margin-top: -90px;
+}
+
+.showing {
+  display: flex;
+  animation : fadeIn 1s ease-in-out forwards;
+}
+.greet-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.js-clock,
+.greetings,
+.form,
+.js-toDoForm,
+.js-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.right-box{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.js-weather{
+  font-size: 30px;
+  margin: 50px;
+}
+.js-clock {
+  font-size: 100px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input{
+  background-color: inherit;
+  border : inherit;
+  text-align: center;
+  height: 100px;
+  width: 550px;
+  font-size: 50px;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+}
+
+.js-reset{
+  background-color: inherit;
+  border : inherit;
+  color: white;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+  display: none;
+  justify-items: center;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.js-reset:focus{
+  outline:none;
+}
+
+.js-toDoForm input{
+  width: 400px;
+}
+.js-toDoList{
+  font-size: 40px;
+  left: 0;
+}
+button:focus{
+  outline:none;
+}
+.js-toDoList button{
+  font-size: 35px;
+}
+
+input:focus{
+  outline:none;
+  font-size: 50px;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  animation: showing 0.5s ease-in-out forwards;
+}
+
+@keyframes showing{
+  from{
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+  to {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+}
+
+input::placeholder{
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
+.js-toDoList {
+  text-align: center;
+}
+.js-toDoList button{
+  border: inherit;
+  background-color: inherit;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
