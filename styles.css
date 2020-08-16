@@ -82,6 +82,7 @@ input{
 
 .js-reset:focus{
   outline:none;
+  animation: showing 0.5s ease-in-out forwards;
 }
 
 .js-toDoForm input{
